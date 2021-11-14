@@ -1,0 +1,14 @@
+.TH SERVER "13 November 21"
+.SH NAME
+server - server program for cmput 379's assignment 3
+.SH SYNOPSIS
+server [port]
+.SH DESCRIPTION
+This program is a server for cmput 379's assignment 3. It takes in transaction requests by the respective client program, processes them,
+and finally notifies the client when they have been completed with the message D<n> where n is the order the request was received in. 
+It also maintains a log defined by <machine_name>.<pid> of all of the incoming and completedtransactions, and some summary statistics. 
+After 30 seconds of no transactions, the server will turn itself off.
+.SH OPTIONS
+.TP
+port
+the port to open the server on

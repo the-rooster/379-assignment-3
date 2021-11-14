@@ -1,0 +1,22 @@
+.TH CLIENT "13 November 21"
+.SH NAME
+client - client program for 379 assignment 3
+.SH SYNOPSIS
+client [port] [ip]
+.SH DESCRIPTION
+This program connects to the respective 379 assignment 3 server program, and then takes in transaction and sleep commands. When a request to the server
+has been finished, the message D<n> is sent back to the client (where n is the request id, or the order received by the server).
+.SH OPTIONS
+.TP
+port
+the port of the server to connect to
+.TP
+ip
+the ip of the server to connect to
+.SH REQUESTS
+.TP
+T<n>
+where n is an integer. Sends a transaction to the server.      
+.TP
+S<n>       
+where n is an integer. Causes the client to wait for an interval determined by n.
