@@ -1,3 +1,5 @@
+all: client server
+
 client: client.o tands.o
 	g++ -O -o client client.o tands.o
 
